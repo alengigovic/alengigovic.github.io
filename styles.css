@@ -1,0 +1,200 @@
+*imports*/
+.row { float: left; clear: both; width: 100%; }
+
+.container .column { float: left; padding: 0 0 0 0; width: 100%; }
+
+.container .seventycolumn { float: left; padding: 0 0 1em 0; width: 98%; }
+
+.container .thirtycolumn { float: left; padding: 0 0 1em 0; width: 98%; }
+
+.container .hundredcolumn { float: left; padding: 0 0 1em 0; width: 98%; }
+
+.container { width: 100%; padding-bottom: 3em; }
+.maincontainer {min-height: 100%; position: relative; }
+.indexcontainer { width: 100%; text-align: center; padding-bottom: 3em; }
+.indexcontainer .column { float: left; width: 100%;}
+
+.clearfix:after, .container:after { content: ''; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; clear: both; }
+
+.clearfix, .container { zoom: 1; }
+
+
+/*styles*/
+@-ms-viewport { width: device-width; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; -webkit-font-smoothing: antialiased; }
+
+html { font: 100%/1.5em "Domine", Georgia, serif; height: 100%; background: #eee; margin: 0; padding: 0;}
+
+body { font-size: 1.125em; line-height: 1.6em; height: 100%; color: #1f1c19; margin: 0; padding: 0;}
+
+img { max-width: 100%; height: auto; }
+
+em { font-family: "Libre Baskerville", Georgia, serif; font-style: italic; font-size: 1.05em; }
+
+a {text-decoration: none; color: #a22127;}
+a:hover {background: #a22127; color: #f8f8f8; padding: .2em;}
+
+/*header*/
+header.row { padding: 0 0 1em 0; }
+h1.logo a { text-decoration: none; color: #f8f8f8; display: block; text-align: center; background: #1f1c19; padding: .8em; }
+
+/*navigation*/
+nav[role="primary"] ul { list-style: none; width: 100%; }
+nav[role="primary"] ul li a { text-decoration: none; text-align: center; background: #1f1c19; display: block; padding: .4em; color: #f8f8f8; }
+nav[role="primary"] ul li a:hover { background: #a22127; }
+
+/*footer*/
+footer { bottom: 0; width: 100%; font-size: .7em; text-decoration: none; color: #f8f8f8; text-align: center; display: block; background: #1f1c19;}
+footer.row {position: absolute;}
+
+/*projects list styles*/
+.projects { text-align: center; }
+
+a.project1, a.project2, a.project3, a.project4, a.project5, a.project6 { text-decoration: none; display:block; color: transparent; padding: 3em; }
+
+a.project1 { background: url(img/tea-logo.png) no-repeat 0 0 #dedd44; background-position:center; }
+
+a.project2 {  background: url(img/SCThumbnail.png) no-repeat 0 0 #0e0e0e; background-position:center; }
+
+a.project3 { background: url(img/tea-logo.png) no-repeat 0 0 #22bbda; background-position:center; }
+
+a.project4 { background: url(img/tea-logo.png) no-repeat 0 0 #ea4466; background-position:center; }
+
+a.project5 { background: url(img/tea-logo.png) no-repeat 0 0 #55dddd; background-position:center; }
+
+a.project6 { background: url(img/tea-logo.png) no-repeat 0 0 #9966cc; background-position:center; }
+
+a.project1:hover, a.project2:hover, a.project3:hover, a.project4:hover, a.project5:hover, a.project6:hover { color: #f8f8f8; background: #1f1c19; }
+
+/* Column Images styles */
+.hundredcolumn img { display: block; padding: 1em 2em 1em 2em;}
+
+/*ProjectPage styles*/
+.project, .about, .contact, { text-align: left; display: block; padding:0 0 3em 0; }
+
+h2.hundredh2 { padding: 1em 2em 1em 1.5em;}
+
+p.hundredtext { padding-right: 2em; padding-left: 2em; margin: 0 auto; width: 99%; }
+
+/*project navigation*/
+.projectnav {width: 100%;}
+nav ul#projectnavigation { padding-bottom: .5em;  list-style:none; width: 100%;}
+nav ul#projectnavigation li a { font-size: 1.2em; text-decoration: none; text-align: center; display: block; padding: .3em; background: #1f1c19; color: #f8f8f8; }
+nav ul#projectnavigation li a:hover {background: #a22127; }
+
+/*About & Contact page styles*/
+p.seventytext { padding:1em 2em 0 2em; }
+p.thirtytext { padding:1em 2em 0 2em; }
+ul.thirtylinks {list-style: none; padding: 0 2em 3em 2em; width: 100%; }
+
+/*Blog Styles*/
+ul.blogposts {font-size: 1.125em; line-height: 1.4em; list-style:none; margin: 1.5em 1.5em 0 1.5em; }
+ul.blogposts li { margin-bottom: 1em; }
+
+a.blogtitle { color: #1f1c19; }
+a.blogtitle:hover { color: #a22127; background: none; padding: .2em; }
+
+/*blockquotes*/
+
+blockquote {
+  margin: 3em; /* 10px margin at top and bottom, to separate multiple quotes, or single quote from the rest of content */
+  padding-left: 3em; /*quotes will be indented by 60px from the left */
+  position: relative; /*this is needed for absolute positioning of the quote symbol - see below */
+  line-height: 1.6em;
+}
+ 
+blockquote:before { /* before each quotation, we will have a big double quote symbol */
+  font-family: 'Libre Baskerville', serif; /* quote symbol from this font looks nice to me, use any font family you like */
+  font-size: 4em; /* we need a big quote symbol, this one looks big enough to be noticeable */
+  content: "\201C"; /* this is a "left double quotation mark" - see below link */
+  position: absolute; /* needed for proper positioning of the quote symbol */
+  left: 0.2em; /* adjust this to move the quote symbol horizontally */
+  top: 0.1em; /* adjust this to move it vertically */
+  color: #1f1c19; /* quote symbol is a shade of grey color, use a different color to suit your theme */
+}
+ 
+blockquote cite {
+  display: block;
+  text-align: left;
+  padding-left: 10em;
+  padding-top: 1em;
+}
+ 
+blockquote cite:before { /* every cite will begin with that */
+  content: "\2014 \2009"; /* "em dash" + "thin space",  */
+}
+
+.quotation { display: block; width: 100%; position: center; margin: 15em auto 0 auto; }
+
+/*media queries*/
+@media only screen and (max-width: 599px) { 
+	p { font-size: .9em;}
+	ul.thirtylinks { font-size: .9em; }
+	form { padding: 0 2em 2em 1.8em; }
+	h2.hundredh2 { padding: 1em 2em 1em 1.3em;}
+	body { line-height: 1.5em; }
+	blockquote cite { padding-left: 5em; }
+}  
+
+@media only screen and (max-width: 450px) { 
+	p { font-size: .8em;}
+	ul.thirtylinks { font-size: .8em; }
+	h2.hundredh2 { padding: 1em 2em 1em 1.1em;}
+	body { line-height: 1.3em; }
+	blockquote cite { padding-left: 0.3em; }
+}
+
+@media only screen and (min-width: 600px) { 
+  	/*make grid containers*/
+	.container .seventycolumn { width: 68%; }
+
+	.container .thirtycolumn { width: 28%; }
+
+	/*Make all paragraphs on big screens limited to line length of 600px*/
+	p {max-width:600px;}
+	p.hundredtext {max-width: none;}
+
+	/*navigation*/
+	a.nav-link { display: none; }
+	nav[role="primary"] ul { list-style: none; }
+	nav[role="primary"] ul li a { width: 25%; float: left;}
+
+	.container { width: 100%; padding-bottom: 1em; }
+  
+	/*project nav*/
+	nav ul#projectnavigation { width: 100%; }
+	nav ul#projectnavigation li {float: left; width: 33.33333333333334%; }
+	nav ul#projectnavigation li a {width:100%; }
+
+  }
+@media only screen and (min-width: 800px) { 
+	p { font-size: 1.1em; max-width:760px; }
+	p.hundredtext {padding: 0 6em;}
+	h2.hundredh2 { padding: 1em 2em 1em 4.6em;}
+	ul.thirtylinks { font-size: 1.1em; }
+	form { padding: 0 2em 2em 2.3em; }
+	body { line-height: 1.7em; }
+	.hundredcolumn img { display: block; padding: 1em 7em 1em 7em;}
+	.quotation {padding-left: 8em;}
+}  
+@media only screen and (min-width: 1160px) { 
+	p.hundredtext {padding: 0 10em; }
+	h2.hundredh2 { padding: 1em 2em 1em 7.5em; }
+	body { line-height: 1.7em; }
+	.hundredcolumn img { display: block; padding: 1em 11.3em 1em 11.3em;}
+}
+
+@media only screen and (min-width: 1400px) { 
+	p.hundredtext {padding: 0 16em; }
+	h2.hundredh2 { padding: 1em 2em 1em 12em; }
+	body { line-height: 1.7em; }
+	.hundredcolumn img { display: block; padding: 1em 18em 1em 18em;}
+}
+
+@media only screen and (min-width: 1700px) { 
+	p.hundredtext {padding: 0 22em; }
+	h2.hundredh2 { padding: 1em 2em 1em 16.4em; }
+	body { line-height: 1.7em; }
+	.hundredcolumn img { display: block; padding: 1em 24em 1em 24em;}
+}
