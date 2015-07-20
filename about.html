@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alen Gigović</title>
+    <title>Alen Gigović - About</title>
 
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
 
@@ -59,44 +59,48 @@
     </header>
 
     <section>
-        <ul class="group  span-9-12  project-container">
+        <div class="span-9-12  text-container  group">
+            <div class="span-6-12  col  pad-right">
+                <h3>Hey!</h3>
+                <p><span class="dropcap">M</span>y name is Alen Gigović. I am a freelance designer hailing from Kočevje, Slovenia, focusing mainly on the design of visual identities and usable websites for small businesses with big dreams.</p>
+                <h5 class="tight">Colophon</h5>
+                <p>This simple, static website was designed and coded by yours truly. The typefaces used are <a href="https://www.google.com/fonts/specimen/Noto+Sans" target="_blank">Noto Sans</a> and <a href="https://www.google.com/fonts/specimen/PT+Serif" target="_blank">PT Serif</a>. It is hosted on <a href="https://pages.github.com/" target="_blank">Github</a>, while the blog is powered by <a href="https://www.tumblr.com/" target="_blank">Tumblr</a>.</p>
+            </div>
+            <div class="span-6-12  col  pad-left">
+                <h3 class="minimum">Say hello!</h3>
 
-            <li class="span-6-12  project">
-                <a class="project-thumbnail" id="andavilla" href="andavilla.html">
-                    <h5 class="project-info">Andavilla</h5>
-                </a>
-            </li>
+                <form action="http://formspree.io/alen.gigovic@gmail.com" method="POST">
+                    <label for="name">What's your name?</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
 
-            <li class="span-6-12  project">
-                <a class="project-thumbnail" id="luckys" href="luckys.html">
-                    <h5 class="project-info">Lucky's</h5>
-                </a>
-            </li>
+                    <label for="eemail">What's your email?</label>
+                    <input type="email" name="_replyto" id="eemail" placeholder="me@mymail.com" required>
 
-            <li class="span-6-12  project">
-                <a class="project-thumbnail" id="logos-2k14" href="logos2k14.html">
-                    <h5 class="project-info">Logos 2014</h5>
-                </a>
-            </li>
+                    <input type="text" name="_gotcha" style="display:none" />
 
-            <li class="span-6-12  project">
-                <a class="project-thumbnail" id="john-watson" href="johnwatson.html">
-                    <h5 class="project-info">John Watson's Blog</h5>
-                </a>
-            </li>
+                    <label for="message">What's up?</label>
+                    <textarea name="message" id="message" rows="3" placeholder="Your message" required></textarea>
 
-            <li class="span-6-12  project">
-                <a class="project-thumbnail" id="personal-trainer" href="personaltrainer.html">
-                    <h5 class="project-info">Personal Trainer Identity</h5>
-                </a>
-            </li>
+                    <input type="submit" value="Send">
+                    <input type="hidden" name="_next" value="thanks.html" />
+                </form>
+                <p>If the form above is acting up, my email is: <a href="mailto:hello@alengigovic.com">hello@alengigovic.com</a></p>
+            </div>
+        </div>
+    </section>
 
-            <li class="span-6-12  project">
-                <a class="project-thumbnail" id="logos-2k13" href="logos2k13.html">
-                    <h5 class="project-info">Logos 2013</h5>
-                </a>
-            </li>
-        </ul>
+    <section class="findme">
+        <div class="span-9-12  container">
+            <h5>Also find me on:</h5>
+            <ul class="social  group">
+                <li class="span-6-12  col">
+                    <a href="https://twitter.com/alengigo"><svg class="icon icon-twitter" viewBox="0 0 22 22"><use xlink:href="#icon-twitter"></use></svg> Twitter</a>
+                </li>
+                <li class="span-6-12  col">
+                    <a href="https://www.behance.net/alengigo"><svg class="icon icon-behance" viewBox="0 0 22 22"><use xlink:href="#icon-behance"></use></svg> Behance</a>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <footer class="dark  group">
@@ -110,7 +114,7 @@
                     <a href="about.html"><svg class="icon icon-about" viewBox="0 0 22 22"><use xlink:href="#icon-about"></use></svg> About</a>
                 </li>
                 <li>
-                    <a href="http://blog.alengigovic.com/"><svg class="icon icon-blog" viewBox="0 0 22 22"><use xlink:href="#icon-blog"></use></svg> Blog</a>
+                    <a href="http://blog.alengigovic.com"><svg class="icon icon-blog" viewBox="0 0 22 22"><use xlink:href="#icon-blog"></use></svg> Blog</a>
                 </li>
             </ul>
             <ul class="span-4-12  col  container">
@@ -132,5 +136,6 @@
             </ul>
         </div>
     </footer>
+
 </body>
 </html>
