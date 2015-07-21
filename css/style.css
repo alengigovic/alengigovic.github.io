@@ -407,6 +407,10 @@ section, .container {
     text-align: left;
 }
 
+.text-container h2{
+    margin-bottom: 1em;
+}
+
 .description {
     margin-top: 1.5em;
 }
